@@ -1,0 +1,11 @@
+{
+  "name": "chode-com",
+  "version": "1.0.0",
+  "description": "초드닷컴",
+  "scripts": {
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
