@@ -1,0 +1,89 @@
+/* --- 
+  기본 설정: 
+  모든 요소의 여백(margin, padding)을 초기화하고
+  폰트를 깔끔한 산세리프체로 지정합니다.
+--- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 크기 계산을 쉽게 해주는 마법의 속성 */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f7f6; /* 아주 연한 회색 배경 */
+  color: #333; /* 기본 글자색 */
+  line-height: 1.6; /* 줄 간격 */
+}
+
+/* --- 
+  1. 레이아웃: 콘텐츠를 중앙에 모으기
+--- */
+.container {
+  max-width: 960px; /* PC에서 너무 넓어지지 않게 */
+  margin: 40px auto; /* 위아래 여백 40px, 좌우는 'auto'로 중앙 정렬 */
+  padding: 0 20px; /* 모바일에서 좌우 여백 */
+}
+
+/* --- 
+  2. 헤더: 제목과 부제 스타일
+--- */
+.site-header {
+  text-align: center; /* 텍스트 중앙 정렬 */
+  margin-bottom: 50px; /* 메인 콘텐츠와 간격 띄우기 */
+}
+
+.site-header h1 {
+  font-size: 2.5rem; /* 1rem = 16px (기본값) */
+  color: #2a60e4; /* 메인 컬러 (파란색 계열) */
+  margin-bottom: 10px;
+}
+
+.site-header .tagline {
+  font-size: 1.1rem;
+  color: #555; /* 짙은 회색 */
+}
+
+/* --- 
+  3. 메인: 카테고리 카드 목록 (핵심 디자인)
+--- */
+.category-list {
+  /* CSS Grid: 카드를 바둑판식으로 정렬하는 최신 기술
+    모바일에서는 1줄, 태블릿/PC에서는 자동으로 여러 줄
+  */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px; /* 카드 사이의 간격 */
+}
+
+/* --- 
+  4. 카드 개별 디자인 
+--- */
+.card {
+  display: block; /* a태그는 원래 '글자'(inline)라서 '블록'으로 변경 */
+  background-color: #ffffff; /* 흰색 배경 */
+  border-radius: 10px; /* 모서리를 둥글게 */
+  padding: 25px;
+  text-decoration: none; /* 링크 밑줄 제거 */
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
+  
+  /* 마우스를 올렸을 때 효과 (transition) */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* 살짝 위로 떠오름 */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* 그림자 진하게 */
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #2a60e4; /* 제목에 메인 컬러 적용 */
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
