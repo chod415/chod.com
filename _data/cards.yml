@@ -1,0 +1,13 @@
+mainList:
+  - title: 게임 유튜브
+    icon: 🎮
+    url: /게임유튜브.html
+    description: 재미있는 게임 유튜버 총정리
+  - title: 헬스 유튜브
+    icon: 💪
+    url: /헬스유튜브.html
+    description: 전문적인 헬스 유튜버 총정리
+  - title: 주식 유튜브
+    icon: 📈
+    url: /주식유튜브.html
+    description: 신뢰할 수 있는 주식 유튜버 총정리
