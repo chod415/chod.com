@@ -16,23 +16,17 @@
     </header>
 
     <main>
-{%- for card in cards.mainList -%}
+      <section class="category-list">
+        
+        {%- for card in cards.mainList -%}
         <a href="{{ card.url }}" class="card">
           <h3>{{ card.icon }} {{ card.title }}</h3>
           <p>{{ card.description }}</p>
         </a>
         {%- endfor -%}
         
-    <a href="요리유튜브.html" class="card">
-     <h3>🍳 요리 유튜브</h3>
-      <p>따라하기 쉬운 레시피 총정리</p>
-     </a>
-      </section>
-    </main>
+        </section>
+      </main>
 
   </div> </body>
-
 </html>
-
-
-
