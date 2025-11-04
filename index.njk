@@ -16,14 +16,12 @@
     </header>
 
     <main>
-      <section class="category-list">
-
-  {%- for card in cards.mainList -%}
-<a href="{{ card.url }}" class="card">
-  <h3>{{ card.icon }} {{ card.title }}</h3>
-  <p>{{ card.description }}</p>
-</a>
-{%- endfor -%}
+{%- for card in cards.mainList -%}
+        <a href="{{ card.url }}" class="card">
+          <h3>{{ card.icon }} {{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+        </a>
+        {%- endfor -%}
   
         
     <a href="요리유튜브.html" class="card">
@@ -36,4 +34,5 @@
   </div> </body>
 
 </html>
+
 
